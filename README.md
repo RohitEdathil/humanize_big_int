@@ -1,21 +1,23 @@
-A dart simple dart package to convert large numbers to a human readable format. Be it likes, comments, views or anything else websites tend to show a humanized version of it (1.2K instead of 1267, for example). This package is exactly for that.
+A simple dart package to convert large numbers to a human readable format. 1278 to 1.2K instead, for example.
 
-## Features
+## Sample
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+### humanizeInt
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+| Integer   | Humanized |
+| --------- | --------- |
+| 1278      | 1.2K      |
+| 250       | 250       |
+| 12340000  | 12M       |
+| 123400000 | 120M      |
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+### humanizeInt
 
 ```dart
-const like = 'sample';
+  final n1 = humanizeInt(1234); // 1.2K
+  final n2 = humanizeInt(12340000); // 12M
 ```
 
 ## Additional information

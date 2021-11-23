@@ -1,7 +1,7 @@
 name: humanize_big_int
 description: A simple dart package to convert large numbers to a human readable format. 1278 to 1.2K instead, for example.
 version: 1.0.0
-homepage: https://www.example.com
+homepage: https://github.com/RohitEdathil/humanize_big_int
 
 environment:
   sdk: ">=2.14.4 <3.0.0"
