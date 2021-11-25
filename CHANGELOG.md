@@ -2,3 +2,7 @@
 
 - Initial version.
 - humanizeInt Function added
+
+## 1.0.1
+
+- Added support for Indian Numbering System

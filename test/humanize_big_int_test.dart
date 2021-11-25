@@ -34,4 +34,24 @@ void main() {
     test("100,000,000,000,000,000s ",
         () => expect("1Q", humanizeInt(1234000000000000)));
   });
+
+  group("Test for huamizeIntInd", () {
+    test("Returns same if small number",
+        () => expect("234", humanizeIntInd(234)));
+    test("1,000s without decimal", () => expect("1K", humanizeIntInd(1000)));
+    test("1,000s with decimal", () => expect("1.2K", humanizeIntInd(1234)));
+    test("10,000s without decimal", () => expect("12K", humanizeIntInd(12340)));
+    test(
+        "1,00,000s with decimal", () => expect("1.2L", humanizeIntInd(123400)));
+    test("1,00,000s without decimal",
+        () => expect("1L", humanizeIntInd(100000)));
+    test("10,00,000s without decimal",
+        () => expect("12L", humanizeIntInd(1234000)));
+    test("1,00,00,000s with decimal",
+        () => expect("1.2Cr", humanizeIntInd(12340000)));
+    test("1,00,00,000s without decimal",
+        () => expect("12Cr", humanizeIntInd(123400000)));
+    test("100,00,00,000s with decimal",
+        () => expect("123Cr", humanizeIntInd(1234000000)));
+  });
 }
