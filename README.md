@@ -1,5 +1,7 @@
 A simple dart package to convert large numbers to a human readable format. 1278 to 1.2K instead, for example.
 
+### [See in pub.dev](https://pub.dev/packages/humanize_big_int)
+
 ## Features
 
 Represents large numbers in terms of K, M, B, T etc. (1234 -> 1.2K)
